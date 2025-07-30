@@ -1,6 +1,3 @@
-# ignore archive folder
-archive/
-
 # ignore backup and temp files
 *.bak
 *.sv$
