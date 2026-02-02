@@ -1,3 +1,10 @@
-# ignore backup and temp files
+# Ignore tests folder
+tests/
+
+# Ignore all CSV files
+*.csv
+
+# Ignore AutoCAD temporary files
+*.dwl
+*.dwl2
 *.bak
-*.sv$
