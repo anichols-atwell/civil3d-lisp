@@ -22,9 +22,11 @@ Smart filleting tool with automatic radius incrementing for offset contours.
    - If you select a *new* object (not the one you just filleted), the tool assumes it's the next offset line and updates the radius automatically.
 
 ## Example
-If you have curbs offset by 0.5 units:
-1. Start with Radius `2.0`.
-2. Set Increment to `0.5`.
-3. Fillet the first curb (Radius 2.0).
-4. Move to the next curb (Radius becomes 2.5 automatically).
-5. Move to the next (Radius becomes 3.0), and so on.
+If you are grading a detention basin with 1-foot contours and 4:1 side slopes (4 horizontal units for every 1 vertical unit):
+1. Start with the bottom contour Radius `10.0`.
+2. Set Increment to `4.0` (1' vertical * 4 slope = 4' horizontal offset).
+3. Fillet the bottom contour (Radius 10.0).
+4. Move to the next contour up (Radius becomes 14.0 automatically).
+5. Move to the next (Radius becomes 18.0), streamlining the grading process.
+
+*Note: This works in reverse as well. If starting from the top contour and working down into the basin, simply set the Increment to `-4.0` (negative) to decrease the radius for each inner contour.*
