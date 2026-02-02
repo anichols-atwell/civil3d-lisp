@@ -1,4 +1,4 @@
-(defun c:OFFSETFILLET ( / *error* rad inc sel1 ent1 last_ent old_cmdecho)
+(defun c:OFILLET ( / *error* rad inc sel1 ent1 last_ent old_cmdecho)
   ;; Error handler
   (defun *error* (msg)
     (if old_cmdecho (setvar "CMDECHO" old_cmdecho))
@@ -69,4 +69,4 @@
   (princ)
 )
 
-(princ "\nType OFFSETFILLET to run.")
+(princ "\nType OFILLET to run.")
